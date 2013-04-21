@@ -1,0 +1,3 @@
+# WiFi & BT bcm4329
+etc/firmware/bcm4329.hcd
+etc/wifi/calibration
