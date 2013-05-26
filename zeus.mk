@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2011 The CyanogenMod Project
+# Copyright (C) 2011-2013 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,8 +11,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
+
 -include device/semc/msm7x30-common/msm7x30.mk
+
+COMMON_PATH := device/semc/zeus-common
 
 DEVICE_PACKAGE_OVERLAYS += device/semc/zeus-common/overlay
 
@@ -27,7 +28,7 @@ PRODUCT_COPY_FILES += \
 
 # Init files
 PRODUCT_COPY_FILES += \
-    device/semc/zeus-common/prebuilt/init.semc.rc:root/init.semc.rc
+    $(COMMON_PATH)/rootdir/init.semc.rc:root/init.semc.rc
 
 # Common device properties
 PRODUCT_PROPERTY_OVERRIDES += \
