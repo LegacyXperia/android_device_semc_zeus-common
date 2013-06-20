@@ -35,4 +35,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
     com.qc.hdmi_out=false
 
-$(call inherit-product-if-exists, vendor/semc/zeus-common/zeus-common-vendor.mk)
+# proprietary side of the board
+$(call inherit-product, vendor/semc/zeus-common/zeus-common-vendor.mk)
