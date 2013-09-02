@@ -34,4 +34,7 @@ WIFI_BAND                        := 802_11_ABG
 BOARD_HAVE_BLUETOOTH_BCM := true
 TARGET_NEEDS_BLUETOOTH_INIT_DELAY := true
 
+# CM Hardware tunables
+BOARD_HARDWARE_CLASS += device/semc/zeus-common/cmhw
+
 -include device/semc/msm7x30-common/Android.mk
