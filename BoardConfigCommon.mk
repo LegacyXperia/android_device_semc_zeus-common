@@ -34,8 +34,4 @@ WIFI_BAND                        := 802_11_ABG
 BOARD_HAVE_BLUETOOTH_BCM := true
 TARGET_NEEDS_BLUETOOTH_INIT_DELAY := true
 
-# Camera
-BOARD_OVERLAY_FORMAT_YCbCr_420_SP := true
-BOARD_CAMERA_USE_GETBUFFERINFO := true
-
 -include device/semc/msm7x30-common/Android.mk

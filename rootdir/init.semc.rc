@@ -78,14 +78,14 @@ on boot
     chown system system /sys/devices/i2c-0/0-0040/dim_time
     chmod 660 /sys/devices/i2c-0/0-0040/dim_time
 
+    # Vibrator intensity tuning
+    chown system system /sys/class/timed_output/vibrator/voltage_level
+
     # Fix permissions for bma150 (accelerometer). Can be at different adresses.
     chown system system /sys/devices/i2c-0/0-0038/rate
     chown system system /sys/devices/i2c-4/4-0038/rate
 
     class_start default
-
-    # Load bcm4329 module
-    #insmod /system/lib/modules/bcm4329.ko
 
     # USB host support
     mkdir /dev/bus 0771 system system
@@ -199,18 +199,12 @@ on property:ro.use_data_netmgrd=false
 service akmd8975 /system/bin/akmd8975
     class main
 
-on early-boot
-    # Start touch firmware loader
-    exec /system/bin/clearpad_fwloader
-
 service hw_config /system/bin/sh /system/etc/hw_config.sh
     class main
     user root
     oneshot
 
 service lidswitchd /system/bin/lidswitchd
-
-service slidercounter /system/bin/slidercounter keypad-zeus
 
 on property:sys.boot_completed=1
     write /sys/module/pm2/parameters/idle_sleep_mode 1

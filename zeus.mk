@@ -22,10 +22,6 @@ DEVICE_PACKAGE_OVERLAYS += device/semc/zeus-common/overlay
 PRODUCT_PACKAGES += \
     hostapd
 
-# These are the common hardware-specific features
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml
-
 # Init files
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/init.semc.rc:root/init.semc.rc
