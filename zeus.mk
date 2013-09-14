@@ -26,6 +26,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/init.semc.rc:root/init.semc.rc
 
+# Device settings
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
 # Common device properties
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
