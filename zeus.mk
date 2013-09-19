@@ -24,7 +24,7 @@ PRODUCT_PACKAGES += \
 
 # Init files
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/init.semc.rc:root/init.semc.rc
+    $(COMMON_PATH)/rootdir/init.board.rc:root/init.board.rc
 
 # Common device properties
 PRODUCT_PROPERTY_OVERRIDES += \
