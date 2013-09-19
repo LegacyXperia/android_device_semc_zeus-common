@@ -204,7 +204,5 @@ service hw_config /system/bin/sh /system/etc/hw_config.sh
     user root
     oneshot
 
-service lidswitchd /system/bin/lidswitchd
-
 on property:sys.boot_completed=1
     write /sys/module/pm2/parameters/idle_sleep_mode 1
