@@ -1,3 +1,7 @@
-# WiFi & BT bcm4329
-etc/firmware/bcm4329.hcd
-etc/wifi/calibration
+# Bluetooth Firmware
+system/vendor/firmware/BCM4329.hcd
+
+# Wi-fi Firmware
+system/vendor/firmware/fw_bcmdhd.bin
+system/vendor/firmware/fw_bcmdhd_apsta.bin
+system/vendor/firmware/nvram.txt
