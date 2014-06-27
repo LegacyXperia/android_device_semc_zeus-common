@@ -46,7 +46,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Common device properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    qemu.hw.mainkeys=0
     com.qc.hdmi_out=false
 
 # proprietary side of the board
