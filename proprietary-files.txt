@@ -1,7 +1,5 @@
 # Bluetooth Firmware
-system/vendor/firmware/BCM4329.hcd
+vendor/firmware/BCM4329.hcd
 
 # Wi-fi Firmware
-system/vendor/firmware/fw_bcmdhd.bin
-system/vendor/firmware/fw_bcmdhd_apsta.bin
-system/vendor/firmware/nvram.txt
+vendor/firmware/nvram.txt
