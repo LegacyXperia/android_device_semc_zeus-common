@@ -22,6 +22,10 @@ DEVICE_PACKAGE_OVERLAYS += device/semc/zeus-common/overlay
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/init.board.rc:root/init.board.rc
 
+# Camera wrapper
+PRODUCT_PACKAGES += \
+    camera.semc
+
 # Configs
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/etc/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
