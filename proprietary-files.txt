@@ -1,5 +1,5 @@
 # Bluetooth Firmware
 vendor/firmware/BCM4329.hcd
 
-# Wi-fi Firmware
-vendor/firmware/nvram.txt
+# Wi-Fi calibration
+etc/wifi/bcmdhd.cal
