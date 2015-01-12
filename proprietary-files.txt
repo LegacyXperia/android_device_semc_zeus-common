@@ -1,5 +1,5 @@
 # Bluetooth Firmware
-vendor/firmware/BCM4329.hcd
+vendor/firmware/bcm4329.hcd
 
 # Wi-Fi calibration
 etc/wifi/bcmdhd.cal
