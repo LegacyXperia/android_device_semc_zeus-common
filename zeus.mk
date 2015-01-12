@@ -31,9 +31,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/etc/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
 # Bluetooth
-PRODUCT_PACKAGES += \
-    btaddr
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.remote.autoconnect=true \
     ro.bluetooth.request.master=true \
