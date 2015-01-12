@@ -12,6 +12,10 @@ on boot
     chown bluetooth net_bt_stack /proc/bluetooth/sleep/lpm
     chown bluetooth net_bt_stack /proc/bluetooth/sleep/btwrite
 
+    # Bluetooth MAC address
+    chown bluetooth bluetooth /proc/bt_mac_addr
+    setprop ro.bt.bdaddr_path /proc/bt_mac_addr
+
 service wpa_supplicant /system/bin/wpa_supplicant \
     -iwlan0 -Dnl80211 -c/data/misc/wifi/wpa_supplicant.conf \
     -I/system/etc/wifi/wpa_supplicant_overlay.conf \
