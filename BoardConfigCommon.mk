@@ -37,4 +37,7 @@ BOARD_BLUEDROID_VENDOR_CONF := device/semc/zeus-common/bluetooth/vnd_zeus.txt
 # CM Hardware tunables
 BOARD_HARDWARE_CLASS += device/semc/zeus-common/cmhw
 
+# Override healthd HAL
+BOARD_HAL_STATIC_LIBRARIES := libhealthd.zeus
+
 -include device/semc/msm7x30-common/Android.mk
