@@ -40,9 +40,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
     wifi.supplicant_scan_interval=15
 
-# Common device properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    com.qc.hdmi_out=false
-
 # proprietary side of the board
 $(call inherit-product, vendor/semc/zeus-common/zeus-common-vendor.mk)
